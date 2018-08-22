@@ -22,6 +22,7 @@ import { ConfigurationSection } from "./configuration";
 import "./i18n";
 import PageSection from "./pages";
 import ProductSection from "./products";
+import ProductTypesSection from "./productTypes";
 import theme from "./theme";
 
 const cookies = new Cookies();
@@ -81,6 +82,10 @@ render(
                         <Route path="/categories" component={CategorySection} />
                         <Route path="/pages" component={PageSection} />
                         <Route path="/products" component={ProductSection} />
+                        <Route
+                          path="/productTypes"
+                          component={ProductTypesSection}
+                        />
                         <Route
                           exact
                           path="/configuration"
